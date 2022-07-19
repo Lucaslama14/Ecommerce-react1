@@ -7,8 +7,8 @@ function App() {
   return (
     //JSX 
     <div className="App" style={styleApp} >
-      <NavBar />
       <h1>Flor de Ceramica</h1>
+      <NavBar />
     </div>
   );
 }

@@ -1,0 +1,6 @@
+.NavBar{
+    padding: 10px 30px;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+}
