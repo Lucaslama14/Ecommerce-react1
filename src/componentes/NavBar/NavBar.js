@@ -2,13 +2,13 @@ import './NavBar.css'
 
 
 const NavBar = () => {
-    return(
-        <div>
+        return(
+        <div className="NavBar">
             <ul>
-                <li>Inicio</li>
-                <li>Productos</li>
-                <li>Nosotros</li>
-                <li>Contacto</li>
+                <li><buton>Inicio</buton></li>
+                <li><buton>Productos</buton></li>
+                <li><buton>Nosotros</buton></li>
+                <li><buton>Contacto</buton></li>
             </ul>
         </div>
     )

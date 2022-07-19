@@ -1,0 +1,10 @@
+.item-product {
+    float: left;
+    width: 33.33%;
+    box-shadow: 1px 1px 5px #aaa;
+    border: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    }
