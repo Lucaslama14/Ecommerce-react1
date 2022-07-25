@@ -1,6 +1,12 @@
-.App{
-    background-color:rgba(56, 27, 85, 0.815);
-    color:peachpuff;
-    text-align: center;
-    font-family:monospace;
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-weight: 400;
+    font-family: 'Macondo', cursive;
+
 }
+
+
+
+  

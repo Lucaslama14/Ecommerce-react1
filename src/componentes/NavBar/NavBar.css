@@ -1,18 +1,35 @@
-*{
-    padding: 1px 40px;
-    
-}
-
 .NavBar{
-    background-color: rgba(56, 27, 85, 0.664);
-    color:peachpuff;
+    background-color:rgb(68, 38, 92);
+    color: blanchedalmond;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    align-items: center;
+
 }
 
-.NavBar ul{
+.img{
+    max-height: 50cm;
+    max-height: 50px;
+
+}
+ul{
     list-style: none;
     display: flex;
+}
 
+li {
+    margin: 0px 10px;
 
+}
+
+button{
+    background: none;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
 
 }
 
