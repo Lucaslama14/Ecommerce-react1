@@ -26,12 +26,15 @@ li {
 
 button{
     background: none;
-    font-size: 15px;
     cursor: pointer;
     text-transform: uppercase;
     text-align: center;
 
 }
 
-
+.cart-widget {
+    padding: 10px;
+    font-size: 300px;
+    
+}
 
