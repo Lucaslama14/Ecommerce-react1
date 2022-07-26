@@ -6,8 +6,8 @@
     justify-content: space-between;
     padding: 10px 10px;
     align-items: center;
-
 }
+
 
 .img{
     max-height: 50cm;
@@ -32,9 +32,5 @@ button{
 
 }
 
-.cart-widget {
-    padding: 10px;
-    font-size: 300px;
-    
-}
+
 
