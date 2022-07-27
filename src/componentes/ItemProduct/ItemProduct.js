@@ -1,9 +1,9 @@
 import { useState } from 'react' 
 import './ItemProduct.css'
+import CreditCardIcon from '@mui/icons-material/CreditCard';
 
 const ItemProduct = ({data}) => {
     const [contador, setContador] = useState(0)
-
     const {titulo, imagen, precio, stock} = data
 
     const addNumber =() => {
@@ -19,13 +19,14 @@ const ItemProduct = ({data}) => {
             <img src={`/assets/${imagen}`} alt="Imagen producto" />
             <p>{titulo}</p>
             <span>${precio}</span>
+            <p><CreditCardIcon /> 3 Cuotas sin interes</p>
             <div className='contadorProd'>
                 <button onClick={removeNumber}>-</button>
                 <p>{contador}</p>
                 <button onClick={addNumber}>+</button>
             </div>
             <p>stock: {stock}</p>
-            <button className="boton">Comprar</button>
+            <button className="boton">Agregar al carrito</button>
         </div>
     )
 } 

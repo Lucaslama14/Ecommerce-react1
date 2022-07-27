@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import NavBar from './componentes/NavBar/NavBar';
-import ItemContainer from './componentes/ItemContainer/ItemContainer';
+import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
     <div className='container'>
           <NavBar />
       <section className='main-cointeiner'>
-        <ItemContainer />
+        <ItemListContainer />
         </section>
       </div>
     );

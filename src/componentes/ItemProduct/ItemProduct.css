@@ -1,15 +1,15 @@
 .item-product {
     float:left;
-    width: 33.3%;
+    width: 280px;
     display: flex;
     flex-direction: column;
     text-align: center;
     box-sizing: border-box;
     padding: 20px;
-    font-family:'Courier New', Courier, monospace;
-
-    
+    font-family:'Courier New', Courier, monospace;   
+    border:solid 1px;
 }
+
     
 
 .boton{
