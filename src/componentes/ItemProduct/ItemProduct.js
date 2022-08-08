@@ -20,12 +20,12 @@ const ItemProduct = ({data}) => {
             <p>{titulo}</p>
             <span>${precio}</span>
             <p><CreditCardIcon /> 3 Cuotas sin interes</p>
-            <div className='contadorProd'>
-                <button onClick={removeNumber}>-</button>
+            {/* <div className='contadorProd'>
+              <button onClick={removeNumber}>-</button>
                 <p>{contador}</p>
                 <button onClick={addNumber}>+</button>
             </div>
-            <p>stock: {stock}</p>
+            <p>stock: {stock}</p> */}
             <button className="boton">Agregar al carrito</button>
         </div>
     )

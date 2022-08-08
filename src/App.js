@@ -2,6 +2,9 @@
 import './App.css';
 import NavBar from './componentes/NavBar/NavBar';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
+import ItemDetail from './componentes/ItemDetail/ItemDetail';
+
+
 
 function App() {
   return (
@@ -10,6 +13,7 @@ function App() {
           <NavBar />
       <section className='main-cointeiner'>
         <ItemListContainer />
+        <ItemDetail />
         </section>
       </div>
     );
