@@ -1,4 +1,5 @@
 .item-product {
+    color: black;
     float:left;
     width: 280px;
     display: flex;
@@ -7,7 +8,7 @@
     box-sizing: border-box;
     padding: 20px;
     font-family:'Courier New', Courier, monospace;   
-    border:solid 1px;
+    border:solid 1px black;
 }
 
     
