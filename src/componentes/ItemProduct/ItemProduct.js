@@ -1,8 +1,5 @@
 import { useState, useEffect, useContext } from 'react'
 import './ItemProduct.css'
-import CreditCardIcon from '@mui/icons-material/CreditCard';
-import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { Link } from 'react-router-dom'
 import { CartContext } from '../../Context/CartContext';
 
@@ -13,12 +10,12 @@ const ItemProduct = ({ data, action }) => {
     const [contador, setContador] = useState(1)
     const { titulo, imagen, precio, stock, id } = data
 
-    const addNumber = () => {
-        setContador(contador + 1)
-    }
-    const removeNumber = () => {
-        setContador(contador - 1)
-    }
+    // const addNumber = () => {
+    //     setContador(contador + 1)
+    // }
+    // const removeNumber = () => {
+    //     setContador(contador - 1)
+    // }
 
     useEffect(() => {
         console.log("Actualizacion")

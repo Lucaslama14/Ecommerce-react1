@@ -3,7 +3,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import DeleteIcon from '@mui/icons-material/Delete';
-import { CartContext } from '../../context/CartContext';
+import { CartContext } from '../../Context/CartContext';
 
 
 const CartWidget = () => {
@@ -38,13 +38,12 @@ const CartWidget = () => {
                 {cartProducts.map((product) => {
                     return(
                         <div className='item-cart-product' key={product.id}>
-                            <img src={`/assets/${product.image}`} alt="" />
+                            <img src={`/assets/${product.imagen}`} alt="" />
                             <div className='cart-product__details'>
-                                <p>{product.title}</p>
-                                <p>TAMAÑO : XS</p>
+                                <p>{product.titulo}</p>
                             </div>
                             <div className='cart-product__details'>
-                                <p>$ {product.price}</p>
+                                <p>$ {product.precio}</p>
                             </div>
                             <div className='cart-product__action'>
                                 <DeleteIcon />

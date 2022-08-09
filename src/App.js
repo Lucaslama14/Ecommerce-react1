@@ -7,7 +7,6 @@ import Contact from './pages/Contact';
 import Detail from './pages/Detail';
 import Checkout from './pages/Checkout';
 import CartProvider from './Context/CartContext';
-import products from './utils/products.mock';
 import Productos from './pages/Products';
 
 

@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Link } from 'react-router-dom'
 
 const ItemDetail = ({ data }) => {
-     const [quantitySelected, setQuantitySelected] = useState(0)
+    const [quantitySelected, setQuantitySelected] = useState(0)
     return (
         <>
             <div className="item-detail-image">
