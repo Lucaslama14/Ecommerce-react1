@@ -1,21 +1,22 @@
 import { useState, useEffect, useContext } from 'react'
 import './ItemProduct.css'
+import CreditCardIcon from '@mui/icons-material/CreditCard';
 import { Link } from 'react-router-dom'
 import { CartContext } from '../../Context/CartContext';
 
 const ItemProduct = ({ data, action }) => {
-    const { handleClick, name } = useContext(CartContext)
+    const { name } = useContext(CartContext)
 
 
     const [contador, setContador] = useState(1)
     const { titulo, imagen, precio, stock, id } = data
 
-    // const addNumber = () => {
-    //     setContador(contador + 1)
-    // }
-    // const removeNumber = () => {
-    //     setContador(contador - 1)
-    // }
+    const addNumber = () => {
+        setContador(contador + 1)
+    }
+    const removeNumber = () => {
+        setContador(contador - 1)
+    }
 
     useEffect(() => {
         console.log("Actualizacion")
@@ -24,7 +25,7 @@ const ItemProduct = ({ data, action }) => {
 
     const addToCart = (e) => {
         console.log("click Producto")
-        e.stopPropagation()
+        
     }
 
     return (
@@ -35,13 +36,7 @@ const ItemProduct = ({ data, action }) => {
             <p>{titulo}</p>
             <span>${precio}</span>
             <p><CreditCardIcon /> 3 Cuotas sin interes</p>
-        {/* <div className='contadorProd'>
-              <button onClick={removeNumber}>-</button>
-                <p>{contador}</p>
-                <button onClick={addNumber}>+</button>
-            </div>
-            <p>stock: {stock}</p> */}
-            <button onClick={addToCart}>Agregar al carrito</button>
+            <button onClick={addToCart}>Ver producto</button>
             </div>
             </Link>
     )

@@ -27,7 +27,7 @@ const ItemCount = ({setQuantitySelected, productData}) => {
                 <span>{countQuantity}</span>
                 <button onClick={addQuantity}>+</button>
             </div>
-            <button onClick={onAdd}>AGREGAR AL CARRITO</button>
+            <button onClick={onAdd}>Agregar</button>
         </>
     )
 }

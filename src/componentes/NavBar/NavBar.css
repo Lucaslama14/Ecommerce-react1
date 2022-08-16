@@ -31,6 +31,48 @@ button{
     text-align: center;
 }
 
+ul.MuiList-root.MuiList-padding.MuiMenu-list.css-6hp17o-MuiList-root-MuiMenu-list{
+    flex-direction: column;
+}
+
+.cart-widget {
+    display: flex;
+    cursor: pointer;
+    margin: 10px;
+
+}
+
+
+
+
+.item-cart-product {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    justify-content: space-around;
+}
+
+.item-cart-product ul {
+    display: flex;  
+
+}
+
+.item-cart-product img {
+    width: 25%;
+}
+
+.cart-product__action {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+
 
 
 

@@ -1,7 +1,6 @@
 import {useState , useContext} from 'react'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { CartContext } from '../../Context/CartContext';
 
@@ -9,7 +8,7 @@ import { CartContext } from '../../Context/CartContext';
 const CartWidget = () => {
     const [anchorEl, setAnchorEl] = useState(null);
 
-    const { cartProducts, clear } = useContext(CartContext)
+    const { cartProducts, clear, deleteProduct, totalProducts } = useContext(CartContext)
 
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
@@ -20,6 +19,7 @@ const CartWidget = () => {
     };
     return(
         <div className='cart-widget'>
+            {cartProducts.length !== 0 && <p>{totalProducts}</p>}
             <ShoppingCartIcon 
                 aria-controls={open ? 'basic-menu' : undefined}
                 aria-haspopup="true"
@@ -46,7 +46,7 @@ const CartWidget = () => {
                                 <p>$ {product.precio}</p>
                             </div>
                             <div className='cart-product__action'>
-                                <DeleteIcon />
+                            <DeleteIcon onClick={() => deleteProduct(product)}/>
                             </div>
                         </div>
                     )
