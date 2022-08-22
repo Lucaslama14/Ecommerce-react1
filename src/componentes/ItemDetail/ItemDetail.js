@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Link } from 'react-router-dom'
 
 const ItemDetail = ({ data }) => {
-    const [quantitySelected, setQuantitySelected] = useState(1)
+    const [quantitySelected, setQuantitySelected] = useState(0)
     return (
         <>
             <div className="item-detail-image">
@@ -18,7 +18,7 @@ const ItemDetail = ({ data }) => {
                 </div>
                 {console.log("quantitySelected: ", quantitySelected)}
                 {
-                    quantitySelected > 1 ? <button><Link to="/cart">Finalizar Compra</Link></button> : <ItemCount setQuantitySelected={setQuantitySelected} productData={data} />
+                    quantitySelected > 0 ? <button><Link to="/cart">Finalizar Compra</Link></button> : <ItemCount setQuantitySelected={setQuantitySelected} productData={data} />
                 }
 
             </div>

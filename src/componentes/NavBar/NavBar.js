@@ -15,7 +15,7 @@ const NavBar = () => {
             <Link to="/contacto"><li><button>Contacto</button></li></Link>
             </ul>
             <CartWidget  />
-            </div>
+        </div>
     )
 }
 
