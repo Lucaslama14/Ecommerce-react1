@@ -19,12 +19,10 @@ const ItemProduct = ({ data, action }) => {
     }
 
     useEffect(() => {
-        console.log("Actualizacion")
         // setContador(1)
     }, [contador])
 
     const addToCart = (e) => {
-        console.log("click Producto")
         
     }
 
