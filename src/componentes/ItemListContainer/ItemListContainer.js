@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import ItemList from "../ItemList/ItemList"
 import './ItemListContainer.css'
-import products from "../../utils/products.mock"
 // firebase
 import { collection, getDocs } from "firebase/firestore"
 import db from "../../firebaseConfig"
@@ -40,7 +39,7 @@ const ItemListContainer = () => {
 
     return (
         <div className="list-product">
-            <h2>Productos</h2>
+            <h2>Nuestros Productos</h2>
             <ItemList dataProducts={listProducts} />
         </div>
     )

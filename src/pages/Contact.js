@@ -1,6 +1,9 @@
 const Contact = () => {
     return(
-        <h1>Contacto</h1>
+        <>
+        <h1>Seguinos en las redes !!</h1>
+        <h2>@FlorDeCeramica</h2>
+        </>
     )
 }
 
